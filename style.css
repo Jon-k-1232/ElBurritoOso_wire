@@ -1,0 +1,230 @@
+
+/* Flex and viewport margins*/
+body, main, section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+}
+
+
+/* background colors*/
+.sectionOne, .sectionThree, .sectionFive{
+    background-color: lightgrey;
+    text-align: center;
+}
+
+
+/* background colors*/
+.sectionTwo, .sectionFour, .sectionSix{
+    background-color: #b7b6b6;
+    text-align: center;
+}
+
+
+/* All button shapes */
+#findIto, #newReview, #costFilter, #reviewFilter,#locationRate, #createReview, #reviewSubmit, #reviewPhoto,
+#confirmSubmit, #confirmedHome, #confirmEdit{
+    border-radius: 50%;
+    border: none;
+    color: black;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    width: 6em;
+    height: 6em;
+    letter-spacing: 1px;
+}
+
+
+/* button containers */
+.buttons1, .searchFilters, .itemButtons, .reviewButtons, .confirmButtons {
+    justify-content: center;
+    display: inline-flex;
+    width: 100%;
+}
+
+
+/* button margin spacing */
+#findIto, #newReview, #costFilter, #reviewFilter, #locationRate, #createReview, #reviewSubmit, #reviewPhoto,
+#confirmEdit, #confirmSubmit, #confirmedHome{
+    margin: 2em 4em 2em 4em;
+}
+
+
+/* button on hover */
+button:hover {
+    background-color: #a7bfbf;
+}
+
+
+/* footers for each page */
+footer{
+    background-color: dimgrey;
+    height: 5em;
+    margin-top: 3em;
+    border-bottom: solid 10px black;
+}
+
+
+/* headers for each page */
+header{
+    background-color: dimgrey;
+    height: 3em;
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 2em;
+}
+
+
+/* hamburger icon on mobile */
+#hamIcon{
+    position: absolute;
+    right: 1em;
+    margin: 14px 0em 14px 0em;
+}
+
+/* nav bar stuff */
+#hamIcon a{
+    color: black;
+    text-decoration: none;
+}
+
+/* nav bar stuff */
+.listMenu{
+    display: none;
+}
+
+/* nav bar stuff */
+header h2{
+    margin: auto 0em auto 8px;
+}
+
+
+/* Page Titles */
+#appName, #writeReview, header h2,#confirmReview{
+    text-align: center;
+}
+
+
+/* how to use app instructions page 1 */
+.instructions{
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+/* how to use app instructions page 1 */
+#instructIto, #instructRead, #instructLeave{
+    margin: 0em 1em 1em 1em;
+}
+
+
+/* search bar page 1 */
+#searchBar{
+    border: solid 1px black;
+    width: 27em;
+    height: 4em;
+    text-align: center;
+    border-radius: 2em 2em 2em 2em;
+    margin: auto;
+    background-color: white;
+}
+
+
+/* Larger boxes for maps and user inputs */
+#photoCarousel, #mapSearch, #locationPlot, #reviewDescription, #confirmDescription, #confirmPhoto, #reviewConfirmed{
+    border: solid 1px black;
+    border-radius: 8px 8px 8px 8px;
+    width: 80%;
+    height: 16em;
+    text-align: center;
+    margin: 1em auto 1em auto;
+}
+
+
+/* Long skinny boxes */
+#hit1, #hit2, #hit3, #hit4, #hit5, #hit6, #review1, #review2, #locationName,
+#locationAddress, #reviewRestaurant, #reviewAddress, #confirmRestaurant, #confirmAddress{
+    border: solid 1px black;
+    margin: 1em auto 1em auto;
+    border-radius: 8px 8px 8px 8px;
+    text-align: center;
+    width: 85%;
+    height: 3.2em;
+}
+
+
+/* boxes on page 4 and 5 that allow user to select rate scale */
+#reviewRateScale, #confirmRateScale{
+    border: solid 1px black;
+    border-radius: 8px 8px 8px 8px;
+    width: 10em;
+    margin: 1em auto 1em auto;
+    text-align: center;
+}
+
+/* grade scale */
+.gradeContainer{
+    width:100%;
+}
+
+/* grade scale */
+.gradingScale{
+    display: inline-flex;
+    margin: 0px 1em 0 1em;
+    padding: 0;
+}
+
+/* grade scale */
+.gradingScale li{
+    margin: 1em 1em 2em 1em;
+    list-style: none;
+}
+
+
+@media only screen and (min-width: 700px){
+
+    #hamIcon{
+    display: none
+    }
+
+
+    .listMenu{
+        position: absolute;
+        right: 1em;
+        list-style: none;
+        display: inline-flex;
+        margin: 1em 0px 1em 0px;
+    }
+
+
+    .listMenu li{
+        margin: 0 1em 0 1em;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1000px){
+
+    /* Larger boxes for maps and user inputs */
+    #photoCarousel, #mapSearch, #locationPlot, #reviewDescription, #confirmDescription, #confirmPhoto, #reviewConfirmed{
+        width: 50em;
+    }
+
+
+    /* Long skinny boxes */
+    #hit1, #hit2, #hit3, #hit4, #hit5, #hit6, #review1, #review2, #locationName,
+    #locationAddress, #reviewRestaurant, #reviewAddress, #confirmRestaurant, #confirmAddress{
+        width: 50em;
+    }
+
+}
+
+
+
+
